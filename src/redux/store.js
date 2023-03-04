@@ -1,4 +1,6 @@
-import { createStore, Middleware } from "redux";
-import { cartReducer } from "./reducer/cartReducer";
+import { createStore } from "redux";
+import rootReducer from "./reducers/main";
 
-export const store = createStore(cartReducer);
+const store = createStore(rootReducer);
+
+export default store;
